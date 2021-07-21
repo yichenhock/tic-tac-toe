@@ -42,8 +42,8 @@ class Board extends React.Component {
     }
 
     render() {
-        var grid = [];
-        var elements = [];
+        // var grid = [];
+        // var elements = [];
 
         // for (var i=0; i<3; i++){
         //     grid.push(
@@ -55,10 +55,13 @@ class Board extends React.Component {
         //     )
         // }
 
+        // array[1,2,3]
+
         return (
 
             <div>
             {/* <div className="status">{status}</div> */}
+
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
@@ -85,6 +88,7 @@ class Game extends React.Component {
         this.state = {
             history: [{
                 squares: Array(9).fill(null),
+                index: null,
             }],
             stepNumber: 0,
             xIsNext: true,
